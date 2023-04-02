@@ -1,0 +1,78 @@
+@import '_variables'
+.card-container
+	display: flex
+	justify-content: space-evenly
+	flex-wrap: wrap
+
+.card
+	transform: skew(-2deg)
+	display: block
+	position: relative
+	transition: .3s
+	width: 19rem
+	height: max-content
+	box-shadow: $shadow
+	background: #fff
+	border-radius: $radius
+	margin: 0 1em 3em
+	cursor: pointer
+
+	& img
+		object-fit: cover
+		height: 12.5rem
+		max-width: 100%
+		padding: 1em
+		// width: 80%
+		display: block
+		margin-left: auto
+		margin-right: auto
+		border-top-left-radius: $radius
+		border-top-right-radius: $radius
+
+	&:hover
+		transform: translateY(-15px)
+	// 	&::after
+	// 		transform: translate(-50%, 12px)
+	// 		&::before
+	// 			transform: translate(-50%, 20px)
+
+	& .body
+		z-index: 1
+		border-radius: $radius
+		background: inherit
+		padding: 0 1.5em 1.5em
+
+	& li
+		padding: .125em 0
+
+	& .title
+		text-transform: uppercase
+		border-top: 1px solid $grey
+		padding-top: 1em
+		color: #000
+		margin: .5em 0 .35em
+		font-size: 1.7rem
+
+	// &::after,
+	// &::before
+	// 	transition: .35s
+	// 	content: ""
+	// 	border-radius: $radius
+	// 	box-shadow: $shadow
+	// 	width: 60%
+	// 	height: 6.25rem
+
+	// 	display: block
+	// 	position: absolute
+	// 	bottom: 1px
+	// 	left: 50%
+	// 	transform: translate(-50%, 0)
+	// 	z-index: -100
+
+	// &::after
+	// 	background: transparentize(#fff, .5)
+	// 	width: 80%
+
+	& .information
+		list-style: none
+		text-transform: capitalize

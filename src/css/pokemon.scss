@@ -1,0 +1,65 @@
+@import '_variables.sass';
+
+.detail {
+	font-size: 1.3rem;
+	margin-left: 10%;
+	& h1 {
+		margin-top: 2rem;
+		text-transform: capitalize;
+		margin-bottom: 1rem;
+	}
+
+	& .types {
+		margin-bottom: 2em;
+
+		& span {
+			background: #5D5F71;
+			color: $light;
+			font-size: .8rem;
+			font-weight: bold;
+			padding: .5em 2em;
+			margin-right: 1em;
+			// box-shadow: $shadow;
+			border-radius: 2.25rem;
+		}
+	}
+
+	& img {
+		width: 15.625rem;
+	}
+
+	& .row {
+		align-items: flex-end;
+		margin: 0;
+		width: 100%;
+	}
+
+}
+
+.stats-container {
+	margin-left: 4em;
+}
+
+.stat.container {
+	width: calc(400px - 8.1rem);
+}
+
+
+.stat-name {
+	text-transform: capitalize;
+	margin-right: auto;
+}
+
+.stat {
+	font-size: 1.1rem;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	& div:first-of-type {
+		width: 100%;
+		display: flex;
+	}
+	& span:last-child {
+		margin-right: 2em;
+	}
+}

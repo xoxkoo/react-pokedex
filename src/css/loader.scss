@@ -1,0 +1,58 @@
+@import '_variables';
+.w {
+	width: calc(100vw);
+}
+.loader {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translateX(calc(50% - 300px));
+	font-size: 2rem;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	margin: .625em;
+}
+@keyframes loader4 {
+10% {
+	transform: translateY(.625em);
+	width: .75em;
+	height: 0;
+	border-radius: .625em / .3125em;
+	box-shadow: 0 5px 3px transparentize($primary, 0.3);
+}
+50% {
+	transform: translateY(-0.9375em);
+	width: 0;
+	height: .75em;
+	border-radius: .3125em / .625em;
+	box-shadow: 0 40px 3px transparentize($primary, 0.85);
+}
+70% {
+	width: 0;
+	height: .75em;
+	border-radius: .3125em / .625em;
+}
+}
+.loader4 {
+	width: 1.875em;
+	height: 3.75em;
+}
+.loader4:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: $primary;
+	border: .3125em solid $primary;
+	border-radius: .625em;
+	transform: translateY(.625em);
+	width: .9375em;
+	height: 0;
+	border-radius: .625em / .3125em;
+	box-shadow: 0 5px 3px transparentize($primary, 0.5);
+	animation: loader4 1s infinite;
+}
