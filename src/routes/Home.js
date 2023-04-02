@@ -67,7 +67,7 @@ function createForwardOffset(offset) {
 }
 
 function createBackOffset(offset) {
-	// const offset = getOffset()
+	offset = (+offset - 21 ) || 0
 
-	return (+offset - 21 ) || 0
+	return (+offset >= 0) ? offset : 0
 }
