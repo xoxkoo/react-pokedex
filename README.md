@@ -1,3 +1,3 @@
 # Pokedex API
 
-![](https://github.com/xoxkoo/fly-birdy/blob/master/flybird.gif)
+![](https://github.com/xoxkoo/react-pokedex/blob/main/ezgif.com-video-to-gif.gif)
