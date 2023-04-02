@@ -15,7 +15,7 @@ export default function PokemonPage() {
 	const { state } = useLocation();
 
 	return <QueryClientProvider client={queryClient}>
-				<Link to={'/' + state.backLink.replace('https://xoxkoo.github.io/react-pokedex#/', '')} className='page-link'>back</Link>
+				<Link to={'/' + state.backLink.replace('https://xoxkoo.github.io/react-pokedex/#/', '')} className='page-link'>back</Link>
 				<Pokemon id={state.id} />
 			</QueryClientProvider>
 }
