@@ -1,5 +1,4 @@
 import '../css/card.sass';
-import React, { useState, useEffect } from 'react';
 import {
   QueryClient,
   QueryClientProvider,
@@ -7,7 +6,6 @@ import {
 } from "@tanstack/react-query";
 import axios from "axios";
 import PokemonCard from '../components/PokemonCard';
-// import { Navigate } from 'react-router-dom';
 import Loader from '../components/Loader';
 import { useLocation, Link } from 'react-router-dom';
 
@@ -16,8 +14,6 @@ const queryClient = new QueryClient();
 export default function Home() {
 	let location = useLocation();
 	const offset = getOffset(location.search)
-	console.log(offset);
-
 
 	return <>
 		<QueryClientProvider client={queryClient}>
@@ -40,7 +36,6 @@ function PokemonContainer({offset}) {
   if (isLoading) return <Loader/>;
 
   if (error) return "An error has occurred: " + error.message;
-  console.log(data.results[0]);
 	return <>
 		<div className="card-container">
 			{(

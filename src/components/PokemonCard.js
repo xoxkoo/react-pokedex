@@ -30,6 +30,8 @@ function Pokemon({pokemon}) {
 
   if (error) return "An error has occurred: " + error.message;
 
+//   console.log(window.location.href);
+
   return (
 	<Link to={'/pokemon'} state={{id: data.id, backLink: window.location.href}}>
 		<div className="card">
